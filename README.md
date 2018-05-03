@@ -1,24 +1,28 @@
-# README
+# Eventbrite by me 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+lien heroku : ...
 
-* Ruby version
+Je n'ai pas réussi à pusher le site sur Heroku.. 
 
-* System dependencies
+Pour tester cette version, il faut : 
 
-* Configuration
+- cloner ce repo
+- bundle install 
+- aller sur l'url : localhost 
 
-* Database creation
 
-* Database initialization
+Il s'agit d'une version v1 qui permet de : 
 
-* How to run the test suite
+- se signup (se créer dans la base de données)
+- se log_in/log_out (se connecter à son profil utilisateur)
 
-* Services (job queues, cache servers, search engines, etc.)
+Chaque utilisateurs peut créer des événements, et voir la liste des événements. 
+Pour rappel, un événement contient un endroit (place), une description et une date.
 
-* Deployment instructions
+Chaque utilisateurs peut voir l'ensemble des événements. 
 
-* ...
+
+je n'ai pas eu le temps d'intégrer la participation des utilisateurs à un événements même si le modèle a bien été crée. 
+
+Si vous avez des questions, n'hésitez pas à me contacter sur slack. (je vais re essayé de push sur heroku)
