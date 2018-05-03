@@ -1,0 +1,22 @@
+ 
+ <% provide(:place, "All Events") %>   
+  <div class="container text-center">
+    <div class="row">
+      <h1>Les événements</h1>
+    </div> 
+     <p> <% if current_user %>
+            <li><%= link_to "Créer votre événement", create_event_path, button: "Create Event" %></li>
+            </p>
+  </div>
+        
+                <% @events.each do |event|%>
+<h2><%= event.place%></h2>
+<p><%= event.description%></p>
+<p><%= event.date%></p>
+
+
+
+<%end%>
+<%end%>
+
+

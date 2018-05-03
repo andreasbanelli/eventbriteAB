@@ -1,0 +1,19 @@
+  <% provide(:title, "#{@display_email} Profile") %>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 col-md-offset-3 text-center">
+        <h1><%= @display_email  %> Profile</h1>
+        <h2> <%= current_user.email %><h2>
+        <h3><li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "Events", events_path %></li>
+          </h3>
+      </div>
+      <p> <% if current_user %>
+            <li><%= link_to "Logout", logout_path, method: "delete" %></li>
+            </p>
+                      <% end %>
+
+    </div>
+  </div>

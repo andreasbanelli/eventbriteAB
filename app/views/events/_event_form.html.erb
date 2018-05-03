@@ -1,0 +1,33 @@
+
+    <%= form_for(@event, url: url, html: { multipart: true }) do |f| %>  
+ <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+          <%= f.label :place, "Place"%><span id="required">*</span>
+          <%= f.text_field :place, class: "form-control" %>
+          <p class="help-block"></p>
+        </div> 
+      </div> 
+
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+          <%= f.label :description, "Description" %><span id="required">*</span>
+          <%= f.text_area :description, style: "resize: none;", rows: "10", class: "form-control" %>
+          <p class="help-block"></p>
+        </div>
+      </div>
+
+    
+
+
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+          <%= f.label :date, "Date" %><span id="required">*</span><br>
+          <%= f.datetime_select :date, options = {ampm: true, minute_step: 15, start_year: Date.today.year, end_year: Date.today.year + 5, order: [:month, :day, :year], default: Time.now} %>
+          <p class="help-block"></p>
+        </div>
+      </div>
+
+    
+
+      <%= f.submit button, class: "btn btn-primary", style: "margin-top: 30px;" %>
+    <% end %>
