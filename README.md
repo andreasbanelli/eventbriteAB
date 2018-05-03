@@ -9,6 +9,9 @@ Pour tester cette version, il faut :
 
 - cloner ce repo
 - bundle install 
+- rails db:migrate
+-rails db:seed
+- rails s
 - aller sur l'url : localhost 
 
 
